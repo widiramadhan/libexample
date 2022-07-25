@@ -16,18 +16,18 @@ class ListPaymentActivity : AppCompatActivity() {
 
         var list = mutableListOf<PaymentModel>()
 
-        list.add(PaymentModel("Title One",   "Description One...",   R.mipmap.ic_launcher  ))
-        list.add(PaymentModel("Title Two",   "Description Two...",   R.mipmap.ic_launcher_round  ))
-        list.add(PaymentModel("Title Three", "Description Three...", R.mipmap.ic_launcher  ))
-        list.add(PaymentModel("Title Four",  "Description Four...",  R.mipmap.ic_launcher_round  ))
-        list.add(PaymentModel("Title Five",  "Description Five...",  R.mipmap.ic_launcher  ))
+        list.add(PaymentModel("Bank Central Asia (BCA)",   "Description for BCA...",   R.drawable.ic_bca  ))
+        list.add(PaymentModel("Artha Graha Internasional",   "Description for AGI...",   R.drawable.ic_agi  ))
+        list.add(PaymentModel("ATM Bersama", "Description for ATM Bersama...", R.drawable.ic_atm_bersama  ))
+        list.add(PaymentModel("BNI",  "Description for BNI...",  R.drawable.ic_bni  ))
+        list.add(PaymentModel("BRI",  "Description for BRI...",  R.drawable.ic_bri  ))
 
         listView.adapter = PaymentAdapter(this,R.layout.row,list)
-        listView.onItemClickListener = AdapterView.OnItemClickListener { adapterView, view, position, id ->
-            val selectedItem = adapterView.getItemAtPosition(position) as String
-            val itemIdAtPos = adapterView.getItemIdAtPosition(position)
+        listView.setOnItemClickListener{paymentAdapter, view, position, id ->
+            val selectedItem = paymentAdapter.getItemAtPosition(position) as String
+            val itemIdAtPos = paymentAdapter.getItemIdAtPosition(position)
 
-            Toast.makeText(applicationContext,"click item $selectedItem its position $itemIdAtPos",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@ListPaymentActivity,"click item $selectedItem its position $itemIdAtPos",Toast.LENGTH_SHORT).show()
         }
     }
 }

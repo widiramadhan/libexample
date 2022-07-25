@@ -8,9 +8,8 @@
 
     <ImageView
         android:id="@+id/iconIv"
-        android:src="@color/colorAccent"
-        android:layout_width="80dp"
-        android:layout_height="80dp" />
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
     <LinearLayout
         android:layout_margin="5dp"
         android:layout_width="match_parent"
