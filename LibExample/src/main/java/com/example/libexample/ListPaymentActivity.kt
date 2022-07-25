@@ -24,10 +24,10 @@ class ListPaymentActivity : AppCompatActivity() {
 
         listView.adapter = PaymentAdapter(this,R.layout.row,list)
         listView.setOnItemClickListener{paymentAdapter, view, position, id ->
-            val selectedItem = paymentAdapter.getItemAtPosition(position) as String
+            val selectedItem = paymentAdapter.getItemAtPosition(position)
             val itemIdAtPos = paymentAdapter.getItemIdAtPosition(position)
 
-            Toast.makeText(this@ListPaymentActivity,"click item $selectedItem its position $itemIdAtPos",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@ListPaymentActivity,"Anda memilih $selectedItem its position $itemIdAtPos",Toast.LENGTH_SHORT).show()
         }
     }
 }
