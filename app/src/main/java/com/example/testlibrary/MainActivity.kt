@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         var btnTest = findViewById(R.id.btn_test) as Button
         btnTest.setOnClickListener {
-            showToast(applicationContext, "ini adalah toast dari library")
+            //showToast(applicationContext, "ini adalah toast dari library")
             Intent(this, ListPaymentActivity::class.java).apply {
                 startActivity(this)
             }
