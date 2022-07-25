@@ -23,11 +23,17 @@ class ListPaymentActivity : AppCompatActivity() {
         list.add(PaymentModel("BRI",  "Description for BRI...",  R.drawable.ic_bri  ))
 
         listView.adapter = PaymentAdapter(this,R.layout.row,list)
-        listView.setOnItemClickListener{paymentAdapter, view, position, id ->
-            val selectedItem = paymentAdapter.getItemAtPosition(position)
-            val itemIdAtPos = paymentAdapter.getItemIdAtPosition(position)
+        listView.onItemClickListener = AdapterView.OnItemClickListener { adapterView, view, position, id ->
+            val selectedItem = adapterView.getItemAtPosition(position) as String
+            val itemIdAtPos = adapterView.getItemIdAtPosition(position)
 
-            Toast.makeText(this@ListPaymentActivity,"Anda memilih $selectedItem its position $itemIdAtPos",Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext,"click item $selectedItem its position $itemIdAtPos",Toast.LENGTH_SHORT).show()
         }
+//        listView.setOnItemClickListener{paymentAdapter, view, position, id ->
+//            val selectedItem = paymentAdapter.getItemAtPosition(position)
+//            val itemIdAtPos = paymentAdapter.getItemIdAtPosition(position)
+//
+//            Toast.makeText(this@ListPaymentActivity,"Anda memilih $selectedItem its position $itemIdAtPos",Toast.LENGTH_SHORT).show()
+//        }
     }
 }
