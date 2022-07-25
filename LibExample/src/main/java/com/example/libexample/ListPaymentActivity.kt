@@ -1,8 +1,8 @@
 package com.example.libexample
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
 
 
 class ListPaymentActivity : AppCompatActivity() {
@@ -11,6 +11,8 @@ class ListPaymentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_payment)
+
+        setTitle("Welcome to my Library")
 
         listView = findViewById(R.id.listView)
 
@@ -23,17 +25,11 @@ class ListPaymentActivity : AppCompatActivity() {
         list.add(PaymentModel("BRI",  "Description for BRI...",  R.drawable.ic_bri  ))
 
         listView.adapter = PaymentAdapter(this,R.layout.row,list)
-        listView.onItemClickListener = AdapterView.OnItemClickListener { adapterView, view, position, id ->
-            val selectedItem = adapterView.getItemAtPosition(position) as String
-            val itemIdAtPos = adapterView.getItemIdAtPosition(position)
+        listView.setOnItemClickListener{paymentAdapter, view, position, id ->
+            val selectedItem = paymentAdapter.getItemAtPosition(position)
+            val itemIdAtPos = paymentAdapter.getItemIdAtPosition(position)
 
-            Toast.makeText(applicationContext,"click item $selectedItem its position $itemIdAtPos",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@ListPaymentActivity,"Anda memilih item ke $itemIdAtPos",Toast.LENGTH_SHORT).show()
         }
-//        listView.setOnItemClickListener{paymentAdapter, view, position, id ->
-//            val selectedItem = paymentAdapter.getItemAtPosition(position)
-//            val itemIdAtPos = paymentAdapter.getItemIdAtPosition(position)
-//
-//            Toast.makeText(this@ListPaymentActivity,"Anda memilih $selectedItem its position $itemIdAtPos",Toast.LENGTH_SHORT).show()
-//        }
     }
 }
