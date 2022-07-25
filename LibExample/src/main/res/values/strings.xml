@@ -1,1 +1,15 @@
-<resources></resources>
+<resources>
+    <string name="app_name">Kotlin ListView</string>
+    <string-array name="payment_list">
+        <item>Bank Central Asia (BCA)</item>
+        <item>Bank Syariah Indonesia</item>
+        <item>CIMB Niaga</item>
+        <item>Mandiri</item>
+        <item>Permata Bank</item>
+        <item>Bukopin</item>
+        <item>Credit Card</item>
+        <item>Gojek</item>
+        <item>Alfamart</item>
+        <item>Indomart</item>
+    </string-array>
+</resources>
