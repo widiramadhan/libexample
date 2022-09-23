@@ -3,10 +3,33 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.18885869565217392" />
         <entry key="../../Library/Android/sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.11458333333333333" />
+        <entry key="FinpaySDK/src/main/res/layout/activity_index.xml" value="0.19610507246376813" />
+        <entry key="LibExample/src/main/res/drawable-anydpi/ic_add.xml" value="0.2085" />
+        <entry key="LibExample/src/main/res/drawable-v24/home_svg.xml" value="0.2085" />
+        <entry key="LibExample/src/main/res/drawable-v24/ic_scan.xml" value="0.2085" />
+        <entry key="LibExample/src/main/res/drawable/ic_add.xml" value="0.2085" />
+        <entry key="LibExample/src/main/res/drawable/ic_arrow.xml" value="0.2085" />
+        <entry key="LibExample/src/main/res/drawable/logoovo_svg.xml" value="0.2085" />
+        <entry key="LibExample/src/main/res/drawable/test.xml" value="0.2085" />
+        <entry key="LibExample/src/main/res/layout/activity_index.xml" value="0.19610507246376813" />
         <entry key="LibExample/src/main/res/layout/activity_list_payment.xml" value="0.19610507246376813" />
+        <entry key="LibExample/src/main/res/layout/activity_scan.xml" value="0.19610507246376813" />
+        <entry key="LibExample/src/main/res/layout/activity_topup.xml" value="0.19610507246376813" />
+        <entry key="LibExample/src/main/res/layout/app_bar.xml" value="0.19610507246376813" />
+        <entry key="LibExample/src/main/res/layout/item_payment_method.xml" value="0.19610507246376813" />
         <entry key="LibExample/src/main/res/layout/row.xml" value="0.11354166666666667" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
+        <entry key="LibExample/src/main/res/layout/top_up_activity.xml" value="0.19610507246376813" />
+        <entry key="LibExample/src/main/res/menu/menu_main.xml" value="0.2557291666666667" />
+        <entry key="app/src/main/res/drawable-anydpi/ic_wallet.xml" value="0.2085" />
+        <entry key="app/src/main/res/drawable-mdpi/air_icon_svg.xml" value="0.2085" />
+        <entry key="app/src/main/res/drawable-mdpi/bpjs_icon_svg.xml" value="0.1255" />
+        <entry key="app/src/main/res/drawable-mdpi/pln_icon_svg.xml" value="0.2085" />
+        <entry key="app/src/main/res/drawable-mdpi/topup_icon_svg.xml" value="0.2085" />
+        <entry key="app/src/main/res/drawable-mdpi/transfer_icon_svg.xml" value="0.2085" />
+        <entry key="app/src/main/res/drawable-v24/logoovo_svg.xml" value="0.2085" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.335" />
       </map>
     </option>
   </component>

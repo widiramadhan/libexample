@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.finpay.sdk">
+
+    <application>
+        <activity
+            android:name="com.finpay.sdk.ListPaymentActivity"
+            android:exported="false" />
+        <activity android:name="com.finpay.sdk.ui.IndexActivity" />
+        <activity android:name="com.finpay.sdk.ui.ScanActivity" />
+        <activity android:name="com.finpay.sdk.ui.TopUpActivity"/>
+    </application>
+
+</manifest>
